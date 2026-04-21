@@ -18,7 +18,10 @@ req = urllib.request.Request(
 )
 
 try:
-    resp = urllib.request.urlopen(req)
+    resp = urllib.request.urlopen(req, timeout=30)
     print(resp.read().decode())
+except urllib.error.HTTPError as e:
+    body = e.read().decode()
+    print(f'HTTP {e.code}: {body}')
 except Exception as e:
     print(f'Error: {e}')
