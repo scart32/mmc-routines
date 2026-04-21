@@ -6,7 +6,7 @@ with open('/tmp/mmc_brief.txt', 'r') as f:
 
 data = json.dumps({
     'token': 'mmc-routines-2026',
-    'docId': '19i5h8QGaAm5vrpUi3bVfJOECn8F9mmXwfxC6fhrE-v4',
+    'docId': '1vfxZh6PCDjS7AIa595QSJ5Tn_qKmxeIfojU6uLOb77c',
     'content': content
 }).encode()
 
