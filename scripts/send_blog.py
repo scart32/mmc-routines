@@ -17,7 +17,7 @@ post['action'] = 'publish_blog'
 data = json.dumps(post).encode()
 
 req = urllib.request.Request(
-    'https://script.google.com/macros/s/AKfycbzJQDq-P9qif_nbw6vHulMJjb__AD0lVLhhKN3ZCltIx5zvG1JaOY2CE_TXKpYrQz8OzA/exec',
+    'https://script.google.com/macros/s/AKfycbzg4JAUEJE94-jxV9hkIN7fiG_pSGyaW5YyaBAEfXbbIXZ3ZhK9jvQRhDSZtsAYh9o_TQ/exec',
     data=data,
     headers={'Content-Type': 'application/json'},
     method='POST'
